@@ -21,13 +21,18 @@ module.exports = {
     right: { xy: [0, 0.5], fingers: [2, 0, 2, 2, 2] }
   },
   
+  "me": {
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0, 0.5], fingers: [2, 1, 2, 2, 2] }
+  },
+  "name": {
+    left: { xy: [0, 0.6], fingers: [2, 0, 0, 2, 2] },
+    right: { xy: [0, 0.4], fingers: [2, 0, 0, 2, 2] }
+  },
+  
   "A": {
     left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
     right: { xy: [0.5, 1], fingers: [1, 2, 2, 2, 2] }
-  },
-  "B": {
-    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
-    right: { xy: [0.5, 1], fingers: [1, 0, 0, 0, 0] }
   },
   
   "C": {
@@ -49,5 +54,30 @@ module.exports = {
   "E": {
     left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
     right: { xy: [0.5, 1], fingers: [2, 2, 2, 2, 2] }
-  }
+  },
+  
+  "S": {
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0.5, 1], fingers: [2, 1, 1, 1, 1] }
+  },
+  "G": {
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0.5, 1], fingers: [2, 0, 2, 2, 2] }
+  },
+  "N": {
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0.5, 1], fingers: [2, 1, 1, 2, 2] }
+  },
+  "B": {
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0.5, 1], fingers: [1, 0, 0, 0, 0] }
+  },
+  "O": {
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0.5, 1], fingers: [1, 1, 1, 1, 1] }
+  },
+  "T": {
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0.5, 1], fingers: [2, 1, 2, 2, 2] }
+  },
 };
