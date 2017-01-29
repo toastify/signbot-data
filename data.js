@@ -85,6 +85,7 @@ function getAllFingers(key){
 }
 
 module.exports = {
+  samples: samples,
   getMatch: function(data){
     //data will be 5 left hand, 5 right hand
     
