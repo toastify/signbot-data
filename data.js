@@ -171,7 +171,7 @@ const samples = {
   
   "null":{
     left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
-    left: { xy: [0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    right: { xy: [0.5, 0], fingers: [0, 0, 0, 0, 0] },
   },
   
   "A": {
