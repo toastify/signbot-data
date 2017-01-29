@@ -6,6 +6,7 @@
   // xy values are listed as leftX, leftY, rightX, rightY.
     // y is in the interval [0,1], representing bottom and top of movement range, respectively
     // x is in the interval [-1,1], representing leftmost and rightmost extremes. Left hand typically will start at -0.5, and right hand at 0.5.
+
 const samples = {
   "hello": {
     right: { xy: [0.5, 1], fingers: [0, 0, 0, 0, 0] }
@@ -75,56 +76,38 @@ function distance(v1, v2){
   return total;
 }
 
-function getAllFingers(key){
+function getAllFingers(datum){
   let a1, a2;
-  if(samples[key].left) a1 = samples[key].left.fingers;
+  if(datum.left) a1 = datum.left.fingers;
   else a1 = new Array(5).fill(0);
-  if(samples[key].right) a2 = samples[key].right.fingers;
+  if(datum.right) a2 = datum.right.fingers;
   else a2 = new Array(5).fill(0);
   return a1.concat(a2);
 }
 
 module.exports = {
   samples: samples,
+  getAllFingers: getAllFingers,
   getMatch: function(data){
-    //data will be 5 left hand, 5 right hand
-    
-    let hasLeft = false, hasRight = false;
-    for(let i = 0; i < 5; i++)
-      if(data[i] != 0){
-        hasLeft = true;
-        break;
-      }
-    for(let i = 5; i < 10; i++)
-      if(data[i] != 0){
-        hasRight = true;
-        break;
-      }
-    
     const threshold = 5;
     let match = null;
     keys.forEach(function(key){
-      if(hasLeft && !hasRight && samples[key].left && !samples[key].right){
-        let dist = distance(data.slice(0,5), samples[key].left.fingers);
+      if(data.left && !data.right && samples[key].left && !samples[key].right){
+        let dist = distance(data.left.fingers, samples[key].left.fingers);
         if(dist < threshold)
-          if(!match || dist < distance(data.slice(0,5), samples[match].left.fingers))
+          if(!match || dist < distance(data.left.fingers, samples[match].left.fingers))
             match = key;
       }
-      else if(!hasLeft && hasRight && samples[key].right && !samples[key].left){
-        let dist = distance(data.slice(5,10), samples[key].right.fingers);
+      else if(!data.left && data.right && samples[key].right && !samples[key].left){
+        let dist = distance(data.right.fingers, samples[key].right.fingers);
         if(dist < threshold)
-          if(!match || dist < distance(data.slice(5,10), samples[match].right.fingers))
+          if(!match || dist < distance(data.right.fingers, samples[match].right.fingers))
             match = key;
       }
-      else if(hasLeft && hasRight){
-        let a1, a2;
-        if(samples[key].left) a1 = samples[key].left.fingers;
-        else a1 = new Array(5).fill(0);
-        if(samples[key].right) a2 = samples[key].right.fingers;
-        else a2 = new Array(5).fill(0);
-        
-        let f = getAllFingers(key);
-        let dist = distance(data.slice(5,10), f);
+      else if(data.left && data.right){
+        let dist = distance(data.left.fingers, samples[key].left.fingers)
+          + distance(data.right.fingers, samples[key].right.fingers);
+        let f = getAllFingers(samples[key]);
         if(dist < threshold)
           if(!match || dist < distance(getAllFingers(match), f))
             match = key;
