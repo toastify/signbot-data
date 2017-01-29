@@ -8,59 +8,59 @@
     // x is in the interval [-1,1], representing leftmost and rightmost extremes. Left hand typically will start at -0.5, and right hand at 0.5.
 
 const samples = {
-  "hello": {
+  "hello": [
     {
-      time : 2000,
+      time : 3000,
       right: { xy: [0.3, 1], fingers: [0, 0, 0, 0, 0] }
     },
     {
-      time : 500,
+      time : 1000,
       right: { xy: [-0.3, 1], fingers: [0, 0, 0, 0, 0] }
     },
     {
-      time : 500,
+      time : 1000,
       right: { xy: [0.3, 1], fingers: [0, 0, 0, 0, 0] }
     },
     {
-      time : 500,
+      time : 1000,
       right: { xy: [-0.3, 1], fingers: [0, 0, 0, 0, 0] }
     },
     {
-      time : 500,
+      time : 1000,
       right: { xy: [0.3, 1], fingers: [0, 0, 0, 0, 0] }
     }
-  },
-  "bye": {
+  ],
+  "goodbye": [
     {
-      time : 2000,
+      time : 3000,
       right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
     },
     {
-      time : 400,
+      time : 800,
       right: { xy: [0, 1], fingers: [2, 2, 2, 2, 0] }
     },
     {
-      time : 400,
+      time : 800,
       right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
     },
     {
-      time : 400,
+      time : 800,
       right: { xy: [0, 1], fingers: [2, 2, 2, 2, 0] }
     },
     {
-      time : 400,
+      time : 800,
       right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
     },
     {
-      time : 400,
+      time : 800,
       right: { xy: [0, 1], fingers: [2, 2, 2, 2, 0] }
     },
     {
-      time : 400,
+      time : 800,
       right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
     },
-  },
-  "how": {
+  ],
+  "how": [
     {
       time : 2000,
       left: { xy: [0.7, 0.5], fingers: [1, 1, 1, 1, 1] },
@@ -77,16 +77,16 @@ const samples = {
       right: { xy: [-0.7, 0.5], fingers: [1, 1, 1, 1, 1] }
     },
     
-  },
-  "you": {
+  ],
+  "you": [
     
     {
       time : 3000,
       left: { xy: [0, 0.3], fingers: [2, 2, 2, 2, 0] },
       right: { xy: [0, 0.5], fingers: [2, 2, 2, 2, 2] }
     }
-  },
-  "yes": {
+  ],
+  "yes": [
     {
       time : 3000,
       left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
@@ -112,8 +112,8 @@ const samples = {
       left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
       right: { xy: [0, 0.7], fingers: [2, 2, 2, 2, 2] }
     }
-  },
-  "no": {
+  ],
+  "no": [
     {
       time : 3000,
       left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
@@ -139,7 +139,7 @@ const samples = {
       left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
       right: { xy: [0, 0.7], fingers: [2, 2, 0, 1, 0] }
     }
-  },
+  ],
   "me": {
     right: { xy: [0, 0.5], fingers: [2, 1, 2, 2, 2] }
   },
