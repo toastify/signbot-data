@@ -27,6 +27,27 @@ const samples = {
     right: { xy: [0, 0.4], fingers: [2, 0, 0, 2, 2] }
   },
   
+  "store": {
+    left: { xy: [-0.5, 0], fingers: [1, 1, 1, 1, 1] },
+    right: { xy: [0.5, 0], fingers: [1, 1, 1, 1, 1] }
+  },
+  "go": {
+    left: { xy: [-0.5, 0.5], fingers: [2, 0, 2, 2, 2] },
+    right: { xy: [0.5, 0.5], fingers: [2, 0, 2, 2, 2] }
+  },
+  "time": {
+    left: { xy: [0, 0.4], fingers: [2, 2, 2, 2, 2] },
+    right: { xy: [0, 0.6], fingers: [2, 0, 2, 2, 2] }
+  },
+  "cold": {
+    left: { xy: [-0.5, 0.5], fingers: [2, 2, 2, 2, 2] },
+    right: { xy: [0.5, 0.5], fingers: [2, 2, 2, 2, 2] }
+  },
+  
+  "no": {
+    right: { xy: [0.5, 1], fingers: [0, 1, 2, 2, 2] }
+  },
+  
   "null":{
     left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
     left: { xy: [0.5, 0], fingers: [0, 0, 0, 0, 0] },
