@@ -9,7 +9,56 @@
 
 const samples = {
   "hello": {
-    right: { xy: [0.5, 1], fingers: [0, 0, 0, 0, 0] }
+    {
+      time : 2000,
+      right: { xy: [0.3, 1], fingers: [0, 0, 0, 0, 0] }
+    },
+    {
+      time : 500,
+      right: { xy: [-0.3, 1], fingers: [0, 0, 0, 0, 0] }
+    },
+    {
+      time : 500,
+      right: { xy: [0.3, 1], fingers: [0, 0, 0, 0, 0] }
+    },
+    {
+      time : 500,
+      right: { xy: [-0.3, 1], fingers: [0, 0, 0, 0, 0] }
+    },
+    {
+      time : 500,
+      right: { xy: [0.3, 1], fingers: [0, 0, 0, 0, 0] }
+    }
+  },
+  "bye": {
+    {
+      time : 2000,
+      right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
+    },
+    {
+      time : 400,
+      right: { xy: [0, 1], fingers: [2, 2, 2, 2, 0] }
+    },
+    {
+      time : 400,
+      right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
+    },
+    {
+      time : 400,
+      right: { xy: [0, 1], fingers: [2, 2, 2, 2, 0] }
+    },
+    {
+      time : 400,
+      right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
+    },
+    {
+      time : 400,
+      right: { xy: [0, 1], fingers: [2, 2, 2, 2, 0] }
+    },
+    {
+      time : 400,
+      right: { xy: [0, 1], fingers: [0, 0, 0, 0, 0] }
+    },
   },
   "how": {
     left: { xy: [0, 0.5], fingers: [0, 1, 1, 1, 1] },
