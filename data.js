@@ -27,6 +27,11 @@ const samples = {
     right: { xy: [0, 0.4], fingers: [2, 0, 0, 2, 2] }
   },
   
+  "null":{
+    left: { xy: [-0.5, 0], fingers: [0, 0, 0, 0, 0] },
+    left: { xy: [0.5, 0], fingers: [0, 0, 0, 0, 0] },
+  },
+  
   "A": {
     right: { xy: [0.5, 1], fingers: [1, 2, 2, 2, 2] }
   },
