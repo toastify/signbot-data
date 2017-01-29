@@ -61,13 +61,85 @@ const samples = {
     },
   },
   "how": {
-    left: { xy: [0, 0.5], fingers: [0, 1, 1, 1, 1] },
-    right: { xy: [0, 0.5], fingers: [0, 1, 1, 1, 1] }
+    {
+      time : 2000,
+      left: { xy: [0.7, 0.5], fingers: [1, 1, 1, 1, 1] },
+      right: { xy: [-0.7, 0.5], fingers: [1, 1, 1, 1, 1] }
+    },
+    {
+      time : 400,
+      left: { xy: [0.7, 0.4], fingers: [1, 1, 1, 1, 1] },
+      right: { xy: [-0.7, 0.6], fingers: [1, 1, 1, 1, 1] }
+    },
+    {
+      time : 400,
+      left: { xy: [0.7, 0.5], fingers: [1, 1, 1, 1, 1] },
+      right: { xy: [-0.7, 0.5], fingers: [1, 1, 1, 1, 1] }
+    },
+    
   },
   "you": {
-    right: { xy: [0, 0.5], fingers: [2, 0, 2, 2, 2] }
+    
+    {
+      time : 3000,
+      left: { xy: [0, 0.3], fingers: [2, 2, 2, 2, 0] },
+      right: { xy: [0, 0.5], fingers: [2, 2, 2, 2, 2] }
+    }
   },
-  
+  "yes": {
+    {
+      time : 3000,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 2, 2, 2] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.8], fingers: [2, 2, 2, 2, 2] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 2, 2, 2] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.8], fingers: [2, 2, 2, 2, 2] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 2, 2, 2] }
+    }
+  },
+  "no": {
+    {
+      time : 3000,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 0, 1, 0] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 1, 1, 1] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 0, 1, 0] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 1, 1, 1] }
+    },
+    {
+      time : 600,
+      left: { xy: [0, 0.3], fingers: [0, 0, 0, 0, 0] },
+      right: { xy: [0, 0.7], fingers: [2, 2, 0, 1, 0] }
+    }
+  },
   "me": {
     right: { xy: [0, 0.5], fingers: [2, 1, 2, 2, 2] }
   },
