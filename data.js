@@ -251,7 +251,7 @@ module.exports = {
           if(!match || dist < distance(data.right.fingers, samples[match].right.fingers))
             match = key;
       }
-      else if(data.left && data.right){
+      else if(data.left && data.right && samples[key].left && samples[key].right){
         let dist = distance(data.left.fingers, samples[key].left.fingers)
           + distance(data.right.fingers, samples[key].right.fingers);
         let f = getAllFingers(samples[key]);
